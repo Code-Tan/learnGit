@@ -7,38 +7,127 @@
   <meta data-react-helmet="ture" name="theme-color" content="#cb3837">
   <!--   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
   <title>Document</title>
-  <base href="http://www.baidu.com/img/" target="_blank" />
+  <!-- <base href="http://www.baidu.com/img/" target="_blank" /> -->
 </head>
 
 <body>
   <a id="top" href="http://www.baidu.com" target="_self">百度一下</a>
-  <br>
+  &nbsp; | &nbsp;
   <a href="http://www.baidu.com">新窗口百度一下</a>
-  <br>
+  &nbsp; | &nbsp;
   <a href="mailto:tan_clf@126.com?title=1&subject=2&content=3">联系我e-mail</a>
-  <br>
+  &nbsp; | &nbsp;
   <a href="tel:15691739596">电话联系我</a>
-  <br>
+  &nbsp; | &nbsp;
   <a href="tencent:temp-chat?QQ=781550604">Q我吧</a>
-  <br>
+  &nbsp; | &nbsp;
   <!-- <a href="">刷新</a> -->
   <!-- 空链接会刷新页面 当前设置base导致不能实现功能 -->
-  <br>
-  <a href="file:///Users/codetan/Downloads/Git/favicon.ico" target="_self" download="download.ico">下载pdf</a>
+  <a href="https://dgss0.bdstatic.com/5bVWsj_p_tVS5dKfpU_Y_D3/res/r/image/2017-09-26/352f1d243122cf52462a2e6cdcb5ed6d.png"
+    target="_self" download="download.png">下载pdf</a>
   <!-- 下载？？？？？ -->
   <br>
+
+  <form action="/register" target="_blank">
+    <h2>注册</h2>
+    <fieldset>
+      <legend>注册</legend>
+      <button type="reset">reset</button>&nbsp; &nbsp;
+      <input type="hidden" name="from" value="baidu"><br><!-- hidden用于form表单提交数据 -->
+      name: <input type="text" name="name" required maxlength="10" minlength="4" placeholder="请输入姓名" tabindex="4">&nbsp;
+      &nbsp;
+      <!-- required 设置必填 placeholder 设置输入框提示 minlength设置最小文本长度 -->
+      email: <input type="text" name="email" autofocus tabindex="2">&nbsp; &nbsp;
+      <!-- autofoces设置默认光标位置 -->
+      phone: <input type="number" name="phone" tabindex="1" maxlength="11" minlength="7"><br>
+      <!-- tabindex设置tab键光标移动顺序 -->
+      brithday: <input type="date" name="birthday">&nbsp; &nbsp;
+      <input type="datetime-local" name="birthday-local" value="2020-07-10T10:10">&nbsp; &nbsp;
+      <input type="time" name="birthtime"><input type="month" name="birthmonth">&nbsp; &nbsp;
+      <input type="week" name="birthweek"><br>
+      qzone: <input type="url" tabindex="3" name="qzone">&nbsp; &nbsp;
+      photo: <input type="file" accept="image/*" multiple name="photo"><br><!-- multiple：支持多选文件 -->
+      <button>submit</button>&nbsp; &nbsp;
+      <input type="submit" value="提交">&nbsp; &nbsp;
+      <input type="image" src="favicon.ico" alt="favicon" value="click me">&nbsp; &nbsp;
+      <!-- 图片作为按钮 -->
+      <input type="button" value="Button"><br>
+      所在城市：
+      <select name="city">
+        <option disabled selected>请选择</option>
+        <optgroup label="一线">
+          <option value="bj">北京</option>
+          <option value="sh">上海</option>
+          <option value="sz">深圳</option>
+        </optgroup>
+        <optgroup label="二线">
+          <option value="xa">西安</option>
+          <option value="cd">成都</option>
+        </optgroup>
+
+      </select><br>
+      color <input type="color" value="#0000ff" name="color">&nbsp; &nbsp;
+      range <input type="range" name="range" step="5" max="80" min="10" value="20">&nbsp; &nbsp;
+      password <input type="password" name="password"><br>
+      like: <input type="checkbox" name="fruit" value="apple" id="fruit-apple"> <label for="fruit-apple"> apple</label>
+      <label><input type="checkbox" name="fruit" value="pear"> pear</label>
+      <label><input type="checkbox" name="fruit" value="orange"> orange</label><br>
+      gender: <label><input type="radio" name="gender" value="man">男</label>
+      <label><input type="radio" name="gender" value="woman">女</label>
+      <br>
+      个人简介：<br>
+      <textarea name="discrible" cols="30" rows="5"></textarea><br>
+    </fieldset>
+  </form>
   <br>
+  <pre>
+    <code>
+      function(){
+        abcd
+      }
+    </code>
+  </pre>
   <br>
+  <ul>
+    <li>iPhone</li>
+    <li>huawei</li>
+    <ul>
+      <li>P30</li>
+      <li>mate30</li>
+    </ul>
+    <li>MI</li>
+  </ul>
+
+  <ol>
+    <li>huawei</li>
+    <li>iphone</li>
+    <ul>
+      <li>xs</li>
+      <li>xr</li>
+    </ul>
+    <li>honor</li>
+  </ol>
+
+  <dl>
+    <dt>手机</dt>
+    <dd>HUAWEI</dd>
+    <dd>iPhone</dd>
+    <dt>电脑</dt>
+    <dd>matebook</dd>
+    <dd>macbook</dd>
+  </dl>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <a href="file:///Users/codetan/Downloads/Git/htmltest.html#top" target="_self">
-    <img src="http://www.baidu.com/img/dong_54209c0ff3da32eecc31f340c08a18f6.gif" alt="没有找到图片" height="100px"
-      title="baidu-logo" />
-  </a>
+  <form action="http://www.baidu.com/s" target="_blank"></form>
+  <fieldset>
+    <legend>百度一下</legend>
+    <a href="file:///Users/codetan/Downloads/Git/htmltest.html#top" target="_self">
+      <img src="http://www.baidu.com/img/dong_54209c0ff3da32eecc31f340c08a18f6.gif" alt="没有找到图片" height="100px"
+        width="200px" title="baidu-logo" />
+    </a><br>
+    <input type="text" name="wd" placeholder="百度一下">
+    <button>百度一下</button>
+  </fieldset>
+  </form>
 </body>
 
 </html>
