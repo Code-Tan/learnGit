@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+</head>
+
+<body>
+  <table border="1px">
+    <caption>table</caption>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+        <th>height</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>bob</td>
+        <td>13</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>mike</td>
+        <td>14</td>
+        <td>160</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>green</td>
+        <td>14</td>
+        <td>155</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>red</td>
+        <td>15</td>
+        <td>170</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">grades</td>
+        <td>1</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <table border="1px" cellspacing=0>
+    <caption>表格</caption>
+    <thead>
+      <tr>
+        <th rowspan="2">id</th>
+        <th colspan="5">week</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td rowspan="2" colspan="4">test</td>
+        <td>test</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>test</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td colspan="3">test</td>
+        <td rowspan="3" colspan="2">test</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+      </tr>
+      <tr>
+        <td>006</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+      </tr>
+      <tr>
+        <td>007</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>008</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+        <td>test</td>
+      </tr>
+    </tfoot>
+  </table>
+  <hr>
+  <img src="cal.png" alt="日历" usemap="#cal">
+  <map name="cal">
+    <area shape="circle" coords="120,210,30" href="https://www.baidu.com" title="circle">
+    <area shape="poly" coords="240,65,480,65,480,340,80,340,80,240,160,240,160,180,80,180,80,120,240,120"
+      href="https://www.baidu.com" title="poly">
+    <area shape="rect" coords="0,65,237,123" href="https://www.baidu.com" title="rect">
+  </map>
+  <iframe src="htmltest.html" frameborder="1" height="400" width="800" name="iframe"></iframe>
+  <a href="https://www.baidu.com" target="iframe">baidu</a>
+</body>
+
+</html>
