@@ -1,3 +1,49 @@
-html {
-    
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: silver;
+}
+
+.header {
+    width: 600px;
+    margin: auto;
+    background-color : rgba(0, 0, 0, 0.3);
+    color: red;
+}
+
+.body {
+    width: 600px;
+    margin: auto;
+}
+
+.cards li{
+    list-style: none;
+    border: 1px solid;
+    background-color: pink;
+    width: 180px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.cards li:nth-child(n+5) {
+    margin-left: 210px;
+}
+.cards li:nth-child(n+9) {
+    margin-left: 420px;
+}
+.cards li:nth-child(4),.cards li:nth-child(8){
+    margin-bottom: -158px;
+}
+.links li {
+    list-style: none;
+    border-bottom: 1px dotted;
+}
+.links li:last-child{
+    border-bottom: none;
+}
+footer {
+    text-align: center;
+    background-color: orchid;
 }
