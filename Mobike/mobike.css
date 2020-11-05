@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgba( 0, 0, 0, 0.1);
+}
+body,html{
+  width: 100%;
+  min-width: 500px;
+}
+
+header {
+  height: 762px;
+  background-image: url(hero-bg-7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main{
+  display: flex;
+  width: 100%;
+  /* margin-top: 2px; */
+  justify-content: space-between;
+}
+main>div{
+  margin-top: 2px;
+  width: calc(100% / 4 - 2px);
+  height: 260px;
+  background-image: url(promo-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#flex-02{
+  background-image: url(promo-02.jpg);
+}
+#flex-03{
+  background-image: url(promo-03.jpg);
+}
+#flex-04{
+  background-image: url(promo-04.jpg);
+}
+@media (max-width: 1080px){
+  header{
+    height: 442px;
+  }
+  main{
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+  main>div{
+    width: calc(100% / 2 - 1px);
+  }
+}
+
+@media (max-width: 640px){
+  main>div{
+    width: 100%;
+  }
+}
+
